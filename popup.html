@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chill Extension</title>
+  <style>
+    body {
+      width: 150px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: radial-gradient(circle at 47% 14%, rgba(205, 205, 205,0.04) 0%, rgba(205, 205, 205,0.04) 43%, transparent 43%, transparent 100%),
+                        radial-gradient(circle at 35% 12%, rgba(215, 215, 215,0.04) 0%, rgba(215, 215, 215,0.04) 4%, transparent 4%, transparent 100%),
+                        radial-gradient(circle at 1% 35%, rgba(24, 24, 24,0.04) 0%, rgba(24, 24, 24,0.04) 37%, transparent 37%, transparent 100%),
+                        radial-gradient(circle at 21% 1%, rgba(0, 0, 0,0.04) 0%, rgba(0, 0, 0,0.04) 26%, transparent 26%, transparent 100%),
+                        radial-gradient(circle at 23% 82%, rgba(249, 249, 249,0.04) 0%, rgba(249, 249, 249,0.04) 60%, transparent 60%, transparent 100%),
+                        radial-gradient(circle at 11% 54%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 23%, transparent 23%, transparent 100%),
+                        radial-gradient(circle at 69% 68%, rgba(234, 234, 234,0.04) 0%, rgba(234, 234, 234,0.04) 10%, transparent 10%, transparent 100%),
+                        linear-gradient(90deg, rgb(228, 46, 222), rgb(63, 61, 215));
+      background-size: cover;
+    }
+
+    .btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 1em 2em;
+      font-size: 15px;
+      font-weight: bold;
+      border-width: 0;
+      border-radius: 1.5em;
+      text-transform: uppercase;
+      transition: .2s ease;
+    }
+
+    .text {
+      font-size: 1.2em;
+      color: white;
+      z-index: 1;
+    }
+
+    .btn::before {
+      position: absolute;
+      content: '';
+      width: 120%;
+      height: 260%;
+      background-image: linear-gradient(135deg, rgba(0,5,255,1) 0%, rgba(255,0,159,1) 100%);
+    }
+
+    .btn::after {
+      position: absolute;
+      content: '';
+      width: 88%;
+      height: 80%;
+      border-width: 0;
+      border-radius: 1.2em;
+      background-color: black;
+      opacity: .7;
+      transition: 100ms ease;
+    }
+
+    .btn:hover.btn {
+      transform: scale(1.1);
+    }
+
+    .btn:hover.btn::after {
+      opacity: .5;
+    }
+
+    .btn:hover.btn::before {
+      animation: turn_4810 .4s infinite linear;
+    }
+
+    .btn:active.btn {
+      transform: scale(1.05);
+    }
+
+    .btn:active.btn::before {
+      transform: scale(1.05);
+      animation: turn_4810 .2s infinite linear;
+    }
+
+    @keyframes turn_4810 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <button id="chillButton" class="btn">
+    <span class="text">CHILL</span>
+  </button>
+  <script src="popup.js"></script>
+</body>
+</html>
