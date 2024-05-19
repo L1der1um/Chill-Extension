@@ -1,4 +1,4 @@
-<h1> Passo a passo para instalação </h1>
+<h1> Passo a passo para instalação (Portuguese) </h1>
 
 1. Crie a pasta chill_extension: Dentro dessa pasta, adicione os arquivos manifest.json, background.js, popup.html, e popup.js.
 
@@ -22,3 +22,28 @@
 Clique no ícone da extensão na barra de ferramentas do Brave.
 Clique no botão CHILL.
 Uma nova aba deve ser aberta com o vídeo do YouTube.
+
+<h1> Step by Step for Installation (Ingles) </h1>
+
+1. Create Chill_Extension: Within this folder, add the manifest.json files, background.js, popup.html, and popup.js.
+
+2. Add icons: Put icon16.png, icon48.png, and icon128.png icons in the same folder.
+
+3. Open the Brave/Chrome/Edge browser:
+
+4. Go to Menu (three lines in the upper right corner) -> More tools -> Extensions.
+
+5. In the upper right corner, activate the developer mode.
+
+6. Load the unpacking extension:
+
+7. Click Load without compaction.
+   
+9. Browse to Chill_Extension folder.
+    
+11. Select the folder and click Select Folder.
+
+12. Test the extension!
+Click on the extension icon in the Brave Toolbar.
+Click the Chill button.
+A new tab should be opened with the Youtube video.
